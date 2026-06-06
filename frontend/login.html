@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Biblioteca Escolar</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="auth">
+  <main class="panel">
+    <h1>Iniciar sesion</h1>
+    <form id="loginForm">
+      <label>Email
+        <input type="email" id="email" required>
+      </label>
+      <label>Password
+        <input type="password" id="password" required>
+      </label>
+      <button type="submit">Entrar</button>
+    </form>
+    <p class="mensaje" id="mensaje"></p>
+    <p class="muted">No tienes cuenta? <a href="registro.html">Registrate</a></p>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>
