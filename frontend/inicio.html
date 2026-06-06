@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Biblioteca Escolar</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="inicio.html">Biblioteca Escolar</a>
+      <nav class="nav">
+        <a href="inicio.html">Inicio</a>
+        <a href="libros.html">Libros</a>
+        <a href="prestamos.html">Prestamos</a>
+        <a href="mis-prestamos.html">Mis prestamos</a>
+        <a href="usuarios.html">Usuarios</a>
+        <a href="devoluciones.html">Devoluciones</a>
+        <a href="reportes.html">Reportes</a>
+        <a href="perfil.html">Perfil</a>
+        <button id="cerrarSesion" type="button">Salir</button>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="dashboard-hero">
+      <div>
+        <span class="eyebrow"></span>
+        <h1>Panel de biblioteca</h1>
+        <p class="muted" id="bienvenida"></p>
+      </div>
+      <div class="hero-note">
+        <strong>Hoy</strong>
+        <span id="fechaServidor">Cargando fecha...</span>
+      </div>
+    </section>
+
+    <section class="quick-actions" aria-label="Accesos rapidos">
+      <a class="quick-card matcha" href="libros.html">
+        <span>Catalogo</span>
+        <strong>Explorar libros</strong>
+      </a>
+      <a class="quick-card lavanda" href="prestamos-registrar.html">
+        <span>Prestamos</span>
+        <strong>Registrar prestamo</strong>
+      </a>
+      <a class="quick-card rosa" href="devoluciones.html">
+        <span>Devoluciones</span>
+        <strong>Confirmar entrega</strong>
+      </a>
+      <a class="quick-card azul" href="reportes.html">
+        <span>Reportes</span>
+        <strong>Ver estadisticas</strong>
+      </a>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-title">
+        <h2>Resumen general</h2>
+        <p class="muted">Datos principales del sistema escolar.</p>
+      </div>
+      <div class="grid dashboard-grid">
+        <article class="stat accent-matcha"><span>Libros</span><strong id="totalLibros">0</strong></article>
+        <article class="stat accent-lavanda"><span>Usuarios</span><strong id="totalUsuarios">0</strong></article>
+        <article class="stat accent-azul"><span>Prestamos activos</span><strong id="totalPrestamos">0</strong></article>
+        <article class="stat accent-rosa"><span>Devoluciones</span><strong id="totalDevoluciones">0</strong></article>
+        <article class="stat accent-miel"><span>Ejemplares disponibles</span><strong id="totalDisponibles">0</strong></article>
+        <article class="stat accent-peligro"><span>Prestamos vencidos</span><strong id="totalVencidos">0</strong></article>
+      </div>
+    </section>
+    <p class="mensaje error" id="mensaje"></p>
+  </main>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
