@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis prestamos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="inicio.html">Biblioteca Escolar</a>
+      <nav class="nav"><a href="inicio.html">Inicio</a><button id="cerrarSesion" type="button">Salir</button></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="catalogo-header">
+      <div>
+        <h1>Mis prestamos</h1>
+        <p class="muted">Consulta tus libros y solicita uno nuevo desde aqui.</p>
+      </div>
+      <a class="boton secundario" href="libros.html">Ver catalogo</a>
+    </section>
+
+    <section class="prestamos-layout">
+      <article class="panel prestamo-form-card">
+        <span class="eyebrow">Nuevo prestamo</span>
+        <h2>Agregar a mis prestamos</h2>
+        <form id="prestamoRapidoForm">
+          <label>Libro disponible
+            <select id="libro_id" required></select>
+          </label>
+          <label>Fecha de prestamo
+            <input type="date" id="fecha_prestamo" required>
+          </label>
+          <label>Fecha limite de devolucion
+            <input type="date" id="fecha_devolucion" required>
+          </label>
+          <button type="submit">Solicitar prestamo</button>
+        </form>
+        <p class="mensaje" id="mensajePrestamo"></p>
+      </article>
+
+      <article class="panel">
+        <h2>Historial</h2>
+        <table>
+          <thead><tr><th>Libro</th><th>Autor</th><th>Prestamo</th><th>Limite</th><th>Estado</th></tr></thead>
+          <tbody id="tablaMisPrestamos"></tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+  <script src="js/mis-prestamos.js"></script>
+</body>
+</html>
