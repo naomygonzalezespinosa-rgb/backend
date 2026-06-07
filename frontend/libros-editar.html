@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar libro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="inicio.html">Biblioteca Escolar</a>
+      <nav class="nav">
+        <a href="libros.html">Volver</a>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="panel">
+      <h1>Editar libro</h1>
+      <form id="libroForm">
+        <label>Titulo<input type="text" id="titulo" required></label>
+        <label>Autor<input type="text" id="autor" required></label>
+        <label>Editorial<input type="text" id="editorial"></label>
+        <label>Anio<input type="number" id="anio"></label>
+        <label>Categoria<select id="categoria_id"></select></label>
+        <label>Codigo<input type="text" id="codigo" required></label>
+        <label>Descripcion<textarea id="descripcion"></textarea></label>
+        <label>Stock<input type="number" id="stock" min="0" required></label>
+        <button type="submit">Actualizar</button>
+      </form>
+      <p class="mensaje" id="mensaje"></p>
+    </section>
+  </main>
+  <script src="js/libros-editar.js"></script>
+</body>
+</html>
