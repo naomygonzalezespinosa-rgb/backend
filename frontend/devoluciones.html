@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devoluciones</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="inicio.html">Biblioteca Escolar</a>
+      <nav class="nav"><a href="inicio.html">Inicio</a><button id="cerrarSesion" type="button">Salir</button></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="panel">
+      <h1>Devolucion de libros</h1>
+      <form id="devolucionForm">
+        <label>Prestamo activo<select id="prestamo_id" required></select></label>
+        <label>Fecha de devolucion<input type="date" id="fecha_devolucion_real" required></label>
+        <label>Estado del libro
+          <select id="estado_libro">
+            <option value="bueno">Bueno</option>
+            <option value="danado">Danado</option>
+            <option value="perdido">Perdido</option>
+          </select>
+        </label>
+        <label>Observaciones<textarea id="observaciones"></textarea></label>
+        <button type="submit">Confirmar devolucion</button>
+      </form>
+      <p class="mensaje" id="mensaje"></p>
+    </section>
+    <h2>Historial de devoluciones</h2>
+    <table>
+      <thead><tr><th>Usuario</th><th>Libro</th><th>Fecha real</th><th>Estado libro</th><th>Observaciones</th></tr></thead>
+      <tbody id="tablaDevoluciones"></tbody>
+    </table>
+  </main>
+  <script src="js/devoluciones.js"></script>
+</body>
+</html>
