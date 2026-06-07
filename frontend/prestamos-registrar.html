@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar prestamo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="inicio.html">Biblioteca Escolar</a>
+      <nav class="nav">
+        <a href="prestamos.html">Volver</a>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="panel">
+      <h1>Registrar prestamo</h1>
+      <form id="prestamoForm">
+        <label>Usuario<select id="usuario_id" required></select></label>
+        <label>Libro<select id="libro_id" required></select></label>
+        <label>Fecha prestamo<input type="date" id="fecha_prestamo" required></label>
+        <label>Fecha devolucion<input type="date" id="fecha_devolucion" required></label>
+        <button type="submit">Guardar</button>
+      </form>
+      <p class="mensaje" id="mensaje"></p>
+    </section>
+  </main>
+  <script src="js/prestamos-registrar.js"></script>
+</body>
+</html>
